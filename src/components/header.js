@@ -19,8 +19,11 @@ import ChevronRightIcon from '@material-ui/icons/ChevronRight'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
-import HomeIcon from '@material-ui/icons/Home'
-import ListIcon from '@material-ui/icons/ViewList'
+import {
+  Home as HomeIcon,
+  ViewList as ListIcon,
+  Info as InfoIcon,
+} from '@material-ui/icons'
 
 const drawerWidth = 240
 
@@ -154,6 +157,14 @@ const Header = ({ siteTitle }) => {
                 <ListIcon />
               </ListItemIcon>
               <ListItemText>Components</ListItemText>
+            </ListItem>
+          </Link>
+          <Link to="/about">
+            <ListItem button>
+              <ListItemIcon>
+                <InfoIcon />
+              </ListItemIcon>
+              <ListItemText>About</ListItemText>
             </ListItem>
           </Link>
         </List>
